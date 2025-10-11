@@ -1,10 +1,13 @@
-# EditorConfig for GLFW and its internal dependencies
+# EditorConfig for GLFW
 #
 # All files created by GLFW should indent with four spaces unless their format requires
 # otherwise.  A few files still use other indent styles for historical reasons.
 #
 # Dependencies have (what seemed to be) their existing styles described.  Those with
 # existing trailing whitespace have it preserved to avoid cluttering future commits.
+#
+# Changes have been made to this file (by sherwoodben) to reflect the stripped-down
+# version of the repository (i.e. the forked repo which adds Premake functionality)
 
 root = true
 
@@ -16,15 +19,7 @@ end_of_line = lf
 indent_style = space
 indent_size = 4
 
-[{src,examples,tests}/*.{c,m,h,rc,in}]
-indent_style = space
-indent_size = 4
-
-[CMakeLists.txt]
-indent_style = space
-indent_size = 4
-
-[CMake/**.{cmake,in}]
+[{src}/*.{c,m,h,rc,in}]
 indent_style = space
 indent_size = 4
 
@@ -32,30 +27,4 @@ indent_size = 4
 indent_style = space
 indent_size = 4
 trim_trailing_whitespace = false
-
-[DoxygenLayout.xml]
-indent_style = space
-indent_size = 2
-
-[docs/*.{scss,html}]
-indent_style = tab
-indent_size = unset
-
-[deps/getopt.{c,h}]
-indent_style = space
-indent_size = 2
-
-[deps/linmath.h]
-indent_style = tab
-tab_width = 4
-indent_size = 4
-trim_trailing_whitespace = false
-
-[deps/nuklear*.h]
-indent_style = space
-indent_size = 4
-
-[deps/tinycthread.{c,h}]
-indent_style = space
-indent_size = 2
 

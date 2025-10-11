@@ -25,7 +25,7 @@ if  _OPTIONS["stand-alone"] then
 end
 
 project "glfw"
-    location "../build/"
+    location "%{wks.location}/../build/"
     kind "StaticLib"
     language "C"
     architecture "x64"
